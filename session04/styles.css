@@ -1,0 +1,60 @@
+/* id rule uses hashtag # */
+
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* id rule uses hashtag # */
+#wrapper {
+    margin: 20px auto;
+    width: 80%;
+    background-color: #fff;
+    padding: 30px 50px;
+}
+
+header h1 {
+
+    font-family: "Bitcount Ink", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500; 
+    /* 100-900 */
+    font-style: normal;
+    font-variant: small-caps;
+    font-size: 66px;
+}
+
+
+
+.wow {
+    color: rgb(0, 234, 255);
+    font-weight: 900;
+    font-style: italic;
+}
+
+main p {
+
+    font-size: 18px;
+    line-height: 24px;
+
+}
+
+table, th, td, tr {
+    margin: 0px;
+    padding: 0px;
+}
+
+main table {
+border: 10px solid #ff0;
+    background-color: aqua;
+
+}
+
+
+main table td {
+border: 5px solid #f0f;
+    background-color: beige;
+
+}
