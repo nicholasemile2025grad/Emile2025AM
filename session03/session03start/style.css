@@ -1,0 +1,59 @@
+body {
+    background-color: #00f;
+    color: #000;
+      font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin:0;
+  padding:0;
+}
+
+/* grouping */
+h1, h2, h3, h4, h5, h6 {
+        margin:0;
+
+}   
+
+header {
+    background-color: #bdffbf;
+    text-align: center;
+    border: #0f0;
+}
+
+nav {
+    background-color: #ffff80;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* descendant selector */
+nav a {
+    color: #000000;
+    text-decoration: none;
+    /* shorthand for margin top/bottom and margin left/right */
+    margin: 0px 20px; 
+    letter-spacing: 3px;
+}
+
+/* pseudo class selector */
+nav a:hover {
+color: rgb(183, 36, 158);
+text-decoration: underline;
+}
+
+main h2 {
+    font-size: 54px;
+    margin: 10px 0px;
+}
+main h3 {
+    margin: 10px 0px;
+    font-size: 30px;
+}
+main p {
+    margin: 20px 0px;
+        font-size: 18px;
+}
+main {
+    background-color: burlywood;
+}
