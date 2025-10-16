@@ -1,0 +1,111 @@
+/* START border-box fix */
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/* END border-box fix */
+
+body {
+    background-color: #13583b;
+}
+
+body {
+    background-color: #13583A;
+    color: #FFF;
+}
+div.container {
+    width: 80%;
+    background-color: #229C67;
+    /* center the div container */
+    margin: 40px auto;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+    padding: 20px;
+}
+
+header {
+    background-color: #33E89A;
+}
+nav {
+    background-color: rgb(137, 189, 188);
+}
+main {
+    background-color: #1B7A50;
+}
+section {
+    background-color: #229C67;
+}
+aside {
+    background-color: #229C67;
+}
+footer {
+    background-color: #33E89A;
+}
+
+main {
+    background-color: #1B7A50;
+    width: 70%;
+    float: left;
+}
+section {
+    background-color: #229C67;
+}
+aside {
+    background-color: #229C67;
+    width: 30%;
+    float: left;
+}
+footer {
+    background-color: #33E89A;
+    float: none;
+    clear: both;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+    background-color: #13583A;
+    width: 100px;
+    padding: 10px 0px;
+    text-align: center;
+    margin: 0px 10px;
+    border-radius: 120px;
+}
+nav a {
+    text-decoration: none;
+    color: #FFF;
+}
+nav a:hover {
+    color: #33E89A;
+}
+
+body {
+  background-image: url("image24.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  height: 10vh;
+  margin: 0;
+}
+
+h1 {
+  margin-top: 4vh;
+  font-size: 3em;
+  text-shadow: 2px 2px 5px black;
+}
