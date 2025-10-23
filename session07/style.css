@@ -1,0 +1,231 @@
+/* FLEXBOX LAYOUT + BEAUTIFUL STYLE FOR ECHINODONTIUM TINCTORIUM PAGE */
+
+/* Reset box model */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ---------- GLOBAL STYLES ---------- */
+body {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  margin: 0;
+  background: #0f1a13 url('https://images.unsplash.com/photo-1523983302481-93bca1af9b60?q=80&w=1920&auto=format&fit=crop') center center fixed;
+  background-size: cover;
+  line-height: 1.6;
+}
+
+/* Use Google Fonts in <head> (add this in your HTML head tag):
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+*/
+
+/* ---------- WRAPPER ---------- */
+#wrapper {
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.96);
+  max-width: 1000px;
+  border: solid 10px #3c3c3c;
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background: linear-gradient(90deg, #8b2c0b, #b24c1a);
+  color: white;
+  order: 1;
+  flex: 1 0 100%;
+  text-align: center;
+  padding: 25px 15px;
+  position: relative;
+  top: 0;
+  z-index: 1;
+  font-family: "Playfair Display", serif;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+  letter-spacing: 1px;
+}
+
+header h2 {
+  margin: 5px 0 0 0;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
+/* ---------- NAVIGATION ---------- */
+nav {
+  background: #4a6843;
+  order: 2;
+  flex: 1 0 100px;
+  padding: 12px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  margin: 10px 0;
+}
+
+nav li a {
+  display: block;
+  text-decoration: none;
+  background-color: #7c9c5c;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+nav li a:hover {
+  background-color: #a2c970;
+  transform: scale(1.02);
+}
+
+/* ---------- MAIN CONTENT ---------- */
+main {
+  background: #f5f2ed;
+  order: 3;
+  flex: 1 1 500px;
+  padding: 25px;
+  position: relative;
+}
+
+main h2,
+main h3 {
+  font-family: "Playfair Display", serif;
+  color: #8b2c0b;
+}
+
+main p {
+  margin-bottom: 18px;
+}
+
+/* ---------- ASIDE ---------- */
+aside {
+  background: #dce7d0;
+  order: 4;
+  flex: 1 0 200px;
+  padding: 20px;
+  color: #1b2a12;
+  font-size: 0.95em;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #2f1b47;
+  color: #fff;
+  order: 5;
+  flex: 1 0 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #ffd86b;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- BUTTONS ---------- */
+div.buttonAbsolute {
+  background-color: #ffb84d;
+  opacity: 1.0;
+  text-align: center;
+  color: #000;
+  width: 150px;
+  border-radius: 125px;
+  padding: 15px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+div.buttonAbsolute:hover {
+  transform: scale(1.1);
+  background-color: #ffc966;
+}
+
+div.buttonRelative {
+  background-color: #ffb84d;
+  color: #000;
+  text-align: center;
+  padding: 15px;
+  width: 200px;
+  position: relative;
+  left: 60px;
+  top: 20px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+div.buttonRelative:hover {
+  transform: scale(1.1);
+  background-color: #ffc966;
+}
+
+/* ---------- IMAGES ---------- */
+img {
+  width: 100%;
+  border-radius: 8px;
+  border: 4px solid #b24c1a;
+  margin-bottom: 10px;
+}
+
+/* ---------- FLEX WRAPPER CHILDREN ---------- */
+#wrapper > * {
+  padding: 20px;
+}
+
+/* ---------- RESPONSIVENESS ---------- */
+@media (max-width: 800px) {
+  nav {
+    order: 2;
+    flex: 1 0 100%;
+  }
+
+  aside {
+    order: 4;
+    flex: 1 0 100%;
+  }
+
+  main {
+    order: 3;
+    flex: 1 0 100%;
+  }
+
+  div.buttonAbsolute {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 10px auto;
+  }
+
+  div.buttonRelative {
+    left: 0;
+    margin: 10px auto;
+  }
+}
