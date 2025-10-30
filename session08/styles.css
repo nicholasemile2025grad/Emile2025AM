@@ -1,0 +1,117 @@
+/* border-box fix */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+/* Grouping example */
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+/* wrapper grid stays the same */
+.wrapper {
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+/* padding on children */
+.wrapper > * {
+  padding: 20px;
+}
+
+header {
+  background: linear-gradient(90deg, #00aaff, #0077cc);
+  color: white;
+  grid-column: 1 / 13;
+  text-align: center;
+}
+
+main {
+  background: #556677;
+  grid-column: 4 / 10;
+  line-height: 1.6;
+}
+
+nav {
+  background: #336b87;
+  grid-column: 1 / 4;
+}
+
+aside {
+  background: #2a7b5f;
+  grid-column: 10 / 13;
+}
+
+main, nav, aside {
+  grid-row: 2 / 4;
+}
+
+footer {
+  background: #2c3e50;
+  color: white;
+  grid-column: 1 / 13;
+  text-align: center;
+}
+
+/* nav links */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+/* aside styling */
+aside ul {
+  list-style: circle;
+  margin-left: 20px;
+}
+
+/* main section styling */
+main h2 {
+  color: #ffcc00;
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 5px;
+}
+
+/* footer text */
+footer p {
+  font-size: 0.9em;
+  margin: 5px 0;
+}
